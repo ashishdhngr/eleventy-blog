@@ -15,7 +15,8 @@ layout: layouts/base.njk
     <h2 class="title has-text-centered mt-3 mb-6">Recent posts</h2>
     <div class="columns">
       {% for post in collections.post | reverse %}
-        {% if loop.index0 < 4 %}
+        {% if loop.index0 < 2
+         %}
           <div class="column">
             <div class="card">
               <header class="card-header">
